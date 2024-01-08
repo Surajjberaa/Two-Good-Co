@@ -1,6 +1,6 @@
 @font-face {
-    font-family: futura;
-    src: url(./Futura-Bold.woff2);
+    font-family: FBold;
+    src: url(/Futura-Bold.woff2);
 }
 
 *{
@@ -103,7 +103,7 @@ body{
 
 #page1>h1{
     font-size: 15.8vw;
-    font-family: futura;
+    font-family: FBold;
     text-transform: uppercase;
     line-height: 14vw;
     letter-spacing: -8px;
