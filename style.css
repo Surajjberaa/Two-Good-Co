@@ -34,7 +34,7 @@ body{
     align-items: flex-start;
     justify-content: space-between;
     padding: 25px;
-
+    /* margin-bottom: 500px; */
 }
 
 #nav #nav-part2{
@@ -98,16 +98,53 @@ body{
     position: relative;
     width: 100%;
     padding: 0 1vw;;
-    padding-top: 20vh;
+    padding-top: 30vh;
 }
 
 #page1>h1{
+    margin-top: 20px;
     font-size: 15.8vw;
     font-family: FBold;
     text-transform: uppercase;
     line-height: 14vw;
     letter-spacing: -8px;
 
+}
+
+#page1book{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* height: 10vh; */
+    /* height: auto; */
+}
+
+#page1book img{
+    
+    height: 90%;
+    width: 95%;
+}
+
+#page1book a{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 34%;
+    left: 64%;
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    font-family: FBold
+}
+
+#page1book #trial{
+    
+    position: absolute;
+    /* display: flex; */
+    top: 26%;
+    left: 60%;
 }
 
 #video-container{
@@ -132,12 +169,49 @@ body{
     color: #fff;
     text-transform: uppercase;
     font-size: 1.3vw;
-    font-family: futura;
+    font-family: FBold;
     position: fixed;
     border-radius: 50%;
     opacity: 0;
     scale: 0;
 }
+
+#main #divider {
+    height: 2vh;
+    width: 98%;
+    font-weight: 50;
+    position: relative;
+    z-index: 10;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-left: 12px;
+    margin-right: 12px;
+    margin-bottom: 0;
+    padding: 20px 0px;
+    font-size: 12px;
+    /* background-color: yellow; */
+    /* color: red; */
+}
+
+.trial{
+    animation: rotation 8s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
+#main #divider h4{
+    font-family: FBold;
+}
+
 
 #page2{
     
@@ -288,7 +362,7 @@ body{
         min-height: 70vh;
         width: 100%;
         padding: 0 3vw;;
-        padding-top: 20vh;
+        padding-top: 20vh ;
     }
 
     #page1>h1{
@@ -296,6 +370,68 @@ body{
         letter-spacing: -3px;
     
     }
+
+    #page1book{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* height: 100%; */
+        /* height: 10vh; */
+        /* height: auto; */
+    }
+    
+    #page1book img{
+        height: 45vh;
+        width: 180vw;
+    }
+    
+    #page1book a{
+        /* position: absolute;  */
+    height: 20%;
+    width: 20%;
+    /* display: flex; */
+    top: 13%;
+    left: 75%;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-family: FBold;
+    }
+    
+    #page1book #trial svg{
+        /* position: absolute; */
+        /* display: flex; */
+        width: 100px;
+    height: 100px;
+    top: 14%;
+    left: 70%;
+    }
+
+    #page1book #trial{
+        top: 11%;
+        left: 71%;
+    }
+
+#main #divider{
+    height: 2vh;
+    width: 95%;
+    font-weight: 50;
+    position: relative;
+    z-index: 10;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    /* margin-top: 30px; */
+    /* margin-left: -4px; */
+    /* margin-right: 310px; */
+    /* margin-bottom: 0; */
+    padding: 26px 2px;
+    font-size: 12px;
+    /* background-color: yellow; */
+    /* color: red; */
+}
 
     #video-container{
         height: 25vh;
@@ -329,11 +465,19 @@ body{
     }
     
     #page2 .elem{
-        height: 100vh;
+        height: 74vh;
+    width: 100%;
+    /* margin-top: 0px; */
+    /* background-color: red; */
+    overflow: hidden;
+    margin-bottom: -12vw;
+    }
+
+    #page2 .elem img {
+        height: 110%;
         width: 100%;
-        /* background-color: red; */
-        overflow: hidden;
-        margin-bottom: 3vw;
+        object-fit: contain;
+        scale: 1;
     }
 
     #page2 .elem .dets{
@@ -348,11 +492,12 @@ body{
     
     
 #page3{
-    min-height: 120vh;
+    min-height: 60vh;
     width: 100%;
     /* background-color: #F7F7F7; */
     position: relative;
     display: flex;
+    margin-top: 50px;
     align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -361,8 +506,8 @@ body{
 }
 
 .child{
-    height: 54vh;
-    width: 88vw;
+    height: 30vh;
+    width: 50vw;
     /* background-color: red; */
     position: relative;
     display: flex;
